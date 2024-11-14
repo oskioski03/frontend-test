@@ -14,6 +14,7 @@ function App() {
 
   return (
     <div style={{display: 'flex', gap: "10px"}} >
+      <h1>TESTOWANIE</h1>
       {!data.length ? 'no data' : data.map((item) => <Card {...item} />)}
     </div>
   )
