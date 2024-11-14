@@ -1,14 +1,9 @@
-import { useEffect, useState } from 'react'
-import { Card, CardProps } from './Card'
+
+import { Card } from './Card'
 
 function App() {
-  const [data, setData] = useState<CardProps[]>([])
 
-  useEffect(() => {
-    fetch('http://localhost:4200/data')
-    .then((data) => data.json())
-    .then((data) => setData(data.data))
-  }, [])
+
 
   const dataArr = [
     {
