@@ -7,9 +7,8 @@ function App() {
   useEffect(() => {
     fetch('http://frog01.mikr.us:41679/data')
     .then((data) => data.json())
-    .then((data) => setData(data.data))
+    .then((data) => setData(data))
   }, [])
-
 
   return (
     <div style={{display: 'flex', gap: "10px"}} >
