@@ -1,15 +1,15 @@
 export type CardProps = {
-    id: string,
+    id: number,
     name: string;
-    surname: string
+    email: string
 }
 
-export const Card = ({ id, name, surname }: CardProps) => {
+export const Card = ({ id, name, email }: CardProps) => {
     return (
         <div style={{width: '200px', height: '200px', background: 'red'}} >
             <p>{id}</p>
             <p>{name}</p>
-            <p>{surname}</p>
+            <p>{email}</p>
         </div>
     )
 }
