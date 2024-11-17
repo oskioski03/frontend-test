@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState<CardProps[]>([])
 
   useEffect(() => {
-    fetch('http://frog01.mikr.us:41679/')
+    fetch('http://frog01.mikr.us:41679')
     .then((data) => data.json())
     .then((data) => setData(data))
   }, [])
